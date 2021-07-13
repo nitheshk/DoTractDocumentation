@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>DoTract Documentation</title>
+    <meta charset="UTF-8">
+    <script type="module" src="./assets/index.js"></script>
+    <script type="module" src="./assets/search-idx.js"></script>
+    <script type="module" src="./assets/search.js"></script>
+    <script charset="UTF-8" src="./assets/highlight.js"></script>
+    <script charset="UTF-8" src="./assets/mark.js"></script>
+    <script charset="UTF-8" src="./assets/lunr.js"></script>
+    <link rel="stylesheet" href="./assets/highlight.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/index.css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <div id="side-bar">
+
+      <div id="logo-container">
+        <div class="title">
+          DoTract Documentation
+        </div>
+        <img src="assets/logo.png" />
+        <div class="subtitle">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.digitalalign.com/">Transforming Financial Services</a>
+        </div>
+      </div>
+      <div id="search-wrapper">
+        <div class="search-icon"></div>
+        <input id="search-input" type="text" autocomplete="off" placeholder="Search...">
+      </div>
+      <ul id="search-results" class=""></ul>
+      <div class="navbar">
+        <nav role="navigation">
+          <a class="nav-header" id="home" href="javascript:void(0)" onclick="goToLocation('index.html');">
+            Home
+          </a>
+          <details id="Constant" class="group-name">
+            <summary id="header-Constant" class="nav-header">
+              <span>Constant</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="QueryConstants" id="item-QueryConstants" class="nav-item class public" onclick="goToLocation('QueryConstants.html');">
+                <a tabindex="1" href="javascript:void(0)">QueryConstants</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Dispatcher" class="group-name">
+            <summary id="header-Dispatcher" class="nav-header">
+              <span>Dispatcher</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="TriggerDispatcher" id="item-TriggerDispatcher" class="nav-item class global" onclick="goToLocation('TriggerDispatcher.html');">
+                <a tabindex="1" href="javascript:void(0)">TriggerDispatcher</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Enum" class="group-name">
+            <summary id="header-Enum" class="nav-header">
+              <span>Enum</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="CrudType" id="item-CrudType" class="nav-item class global" onclick="goToLocation('CrudType.html');">
+                <a tabindex="1" href="javascript:void(0)">CrudType</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Handler" class="group-name">
+            <summary id="header-Handler" class="nav-header">
+              <span>Handler</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="AbstractTriggerHandler" id="item-AbstractTriggerHandler" class="nav-item class global" onclick="goToLocation('AbstractTriggerHandler.html');">
+                <a tabindex="1" href="javascript:void(0)">AbstractTriggerHandler</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Repository" class="group-name">
+            <summary id="header-Repository" class="nav-header">
+              <span>Repository</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="TriggerRepository" id="item-TriggerRepository" class="nav-item class public" onclick="goToLocation('TriggerRepository.html');">
+                <a tabindex="1" href="javascript:void(0)">TriggerRepository</a>
+              </li>
+              <li title="UserRepository" id="item-UserRepository" class="nav-item class global" onclick="goToLocation('UserRepository.html');">
+                <a tabindex="1" href="javascript:void(0)">UserRepository</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Service" class="group-name">
+            <summary id="header-Service" class="nav-header">
+              <span>Service</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="XMLDom" id="item-XMLDom" class="nav-item class public" onclick="goToLocation('XMLDom.html');">
+                <a tabindex="1" href="javascript:void(0)">XMLDom</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Utility" class="group-name">
+            <summary id="header-Utility" class="nav-header">
+              <span>Utility</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="XMLSerializer" id="item-XMLSerializer" class="nav-item class global" onclick="goToLocation('XMLSerializer.html');">
+                <a tabindex="1" href="javascript:void(0)">XMLSerializer</a>
+              </li>
+              <li title="Query" id="item-Query" class="nav-item class global" onclick="goToLocation('Query.html');">
+                <a tabindex="1" href="javascript:void(0)">Query</a>
+              </li>
+              <li title="ApexUtils" id="item-ApexUtils" class="nav-item class public" onclick="goToLocation('ApexUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">ApexUtils</a>
+              </li>
+              <li title="CollectionUtils" id="item-CollectionUtils" class="nav-item class global" onclick="goToLocation('CollectionUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">CollectionUtils</a>
+              </li>
+              <li title="DatabaseUtils" id="item-DatabaseUtils" class="nav-item class global" onclick="goToLocation('DatabaseUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">DatabaseUtils</a>
+              </li>
+              <li title="DateUtils" id="item-DateUtils" class="nav-item class global" onclick="goToLocation('DateUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">DateUtils</a>
+              </li>
+              <li title="GenericUtils" id="item-GenericUtils" class="nav-item class global" onclick="goToLocation('GenericUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">GenericUtils</a>
+              </li>
+              <li title="SecurityUtils" id="item-SecurityUtils" class="nav-item class global" onclick="goToLocation('SecurityUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">SecurityUtils</a>
+              </li>
+              <li title="SObjectUtils" id="item-SObjectUtils" class="nav-item class global" onclick="goToLocation('SObjectUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">SObjectUtils</a>
+              </li>
+              <li title="SObjectWithoutSharing" id="item-SObjectWithoutSharing" class="nav-item class public" onclick="goToLocation('SObjectWithoutSharing.html');">
+                <a tabindex="1" href="javascript:void(0)">SObjectWithoutSharing</a>
+              </li>
+              <li title="SObjectWithSharing" id="item-SObjectWithSharing" class="nav-item class public" onclick="goToLocation('SObjectWithSharing.html');">
+                <a tabindex="1" href="javascript:void(0)">SObjectWithSharing</a>
+              </li>
+              <li title="UserUtils" id="item-UserUtils" class="nav-item class global" onclick="goToLocation('UserUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">UserUtils</a>
+              </li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </div>
+    <table id="content">
+      <tr>
+        <td class="scoping-panel">
+          Show: <input type="checkbox" checked="true" id="cbx-all" onclick="toggleAllScopes(this.checked);" />
+          <label for="cbx-all">All</label>&nbsp;&nbsp;
+          <input type="checkbox" checked="true" id="cbx-global" onclick="toggleScope('global', this.checked);" />
+          <label for="cbx-global">
+            global
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-public" onclick="toggleScope('public', this.checked);" />
+          <label for="cbx-public">
+            public
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-webservice" onclick="toggleScope('webservice', this.checked);" />
+          <label for="cbx-webservice">
+            webService
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td class="doc-page">
+
+          <div class="section">
+
+            <h2 class="class-title top-level-type" id="DatabaseUtils">
+              <span>DatabaseUtils</span>
+            </h2>
+            <div class="class-container">
+
+              <div class="class-description">
+                Copyright (c) 2021 Digital Align Secure code that prevents users from seeing and accessing fields they cannot access.
+              </div>
+              <div class="class-subtitle">
+                Signature
+              </div>
+              <div class="class-annotations">@SuppressWarnings('PMD.AvoidGlobalModifier')</div>
+              <div class="class-signature">
+                global virtual inherited sharing class DatabaseUtils
+              </div><br />Digital Align Team @reference https://github.com/trailheadapps/apex-recipes
+            </div>
+            <div class="subsection methods">
+              <h3 class="subsection-title methods">DatabaseUtils Methods</h3>
+              <div class="methods-container">
+                <ul class="methods-toc">
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.deleteRecord">
+                      deleteRecord (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.deleteRecordBySharing">
+                      deleteRecordBySharing (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.deleteRecords">
+                      deleteRecords (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.deleteRecordsBySharing">
+                      deleteRecordsBySharing (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecord">
+                      getRecord (queryString)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecord_1">
+                      getRecord (queryString, records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecordBySharing">
+                      getRecordBySharing (queryString)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecordBySharing_1">
+                      getRecordBySharing (queryString, records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecordByStrip">
+                      getRecordByStrip (queryString)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecordByStrip_1">
+                      getRecordByStrip (queryString, records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecords">
+                      getRecords (queryString)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecords_1">
+                      getRecords (queryString, records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecordsBySharing">
+                      getRecordsBySharing (queryString)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecordsBySharing_1">
+                      getRecordsBySharing (queryString, records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecordsByStrip">
+                      getRecordsByStrip (queryString)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.getRecordsByStrip_1">
+                      getRecordsByStrip (queryString, records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.insertRecord">
+                      insertRecord (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.insertRecordBySharing">
+                      insertRecordBySharing (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.insertRecordByStrip">
+                      insertRecordByStrip (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.insertRecords">
+                      insertRecords (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.insertRecordsBySharing">
+                      insertRecordsBySharing (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.insertRecordsByStrip">
+                      insertRecordsByStrip (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.updateRecord">
+                      updateRecord (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.updateRecordBySharing">
+                      updateRecordBySharing (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.updateRecordByStrip">
+                      updateRecordByStrip (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.updateRecords">
+                      updateRecords (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.updateRecordsBySharing">
+                      updateRecordsBySharing (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.updateRecordsByStrip">
+                      updateRecordsByStrip (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecord">
+                      upsertRecord (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecord_1">
+                      upsertRecord (record, externalFieldName)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecordBySharing">
+                      upsertRecordBySharing (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecordBySharing_1">
+                      upsertRecordBySharing (record, externalFieldName)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecordByStrip">
+                      upsertRecordByStrip (record)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecordByStrip_1">
+                      upsertRecordByStrip (record, externalFieldName)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecords">
+                      upsertRecords (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecords_1">
+                      upsertRecords (records, externalFieldName)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecordsBySharing">
+                      upsertRecordsBySharing (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecordsBySharing_1">
+                      upsertRecordsBySharing (records, externalFieldName)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecordsByStrip">
+                      upsertRecordsByStrip (records)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DatabaseUtils.upsertRecordsByStrip_1">
+                      upsertRecordsByStrip (records, externalFieldName)
+                    </a>
+
+                  </li>
+                </ul>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.deleteRecord">
+                    <span>deleteRecord(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static void deleteRecord(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.deleteRecordBySharing">
+                    <span>deleteRecordBySharing(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static void deleteRecordBySharing(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.deleteRecords">
+                    <span>deleteRecords(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static void deleteRecords(List&lt;sObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;sObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.deleteRecordsBySharing">
+                    <span>deleteRecordsBySharing(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static void deleteRecordsBySharing(List&lt;SObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;SObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecord">
+                    <span>getRecord(queryString)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject getRecord(String queryString)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecord_1">
+                    <span>getRecord(queryString, records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject getRecord(String queryString, List&lt;Object&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="param-name">List&lt;Object&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecordBySharing">
+                    <span>getRecordBySharing(queryString)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject getRecordBySharing(String queryString)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecordBySharing_1">
+                    <span>getRecordBySharing(queryString, records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject getRecordBySharing( String queryString, List&lt;Object&gt; records )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="param-name">List&lt;Object&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecordByStrip">
+                    <span>getRecordByStrip(queryString)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject getRecordByStrip(String queryString)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecordByStrip_1">
+                    <span>getRecordByStrip(queryString, records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject getRecordByStrip( String queryString, List&lt;Object&gt; records )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="param-name">List&lt;Object&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecords">
+                    <span>getRecords(queryString)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; getRecords(String queryString)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-11-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecords_1">
+                    <span>getRecords(queryString, records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; getRecords( String queryString, List&lt;Object&gt; records )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="param-name">List&lt;Object&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-11-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecordsBySharing">
+                    <span>getRecordsBySharing(queryString)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; getRecordsBySharing(String queryString)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-11-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecordsBySharing_1">
+                    <span>getRecordsBySharing(queryString, records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; getRecordsBySharing( String queryString, List&lt;Object&gt; records )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="param-name">List&lt;Object&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;Object&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-11-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecordsByStrip">
+                    <span>getRecordsByStrip(queryString)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; getRecordsByStrip(String queryString)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-11-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.getRecordsByStrip_1">
+                    <span>getRecordsByStrip(queryString, records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; getRecordsByStrip( String queryString, List&lt;Object&gt; records )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">String</div>
+                  <div class="param-description">queryString</div>
+                  <div class="param-name">List&lt;Object&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-11-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.insertRecord">
+                    <span>insertRecord(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject insertRecord(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.insertRecordBySharing">
+                    <span>insertRecordBySharing(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject insertRecordBySharing(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.insertRecordByStrip">
+                    <span>insertRecordByStrip(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject insertRecordByStrip(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.insertRecords">
+                    <span>insertRecords(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; insertRecords(List&lt;SObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">CrudType</div>
+                  <div class="param-description">crudType</div>
+                  <div class="param-name">List&lt;SObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.insertRecordsBySharing">
+                    <span>insertRecordsBySharing(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; insertRecordsBySharing(List&lt;SObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">CrudType</div>
+                  <div class="param-description">crudType</div>
+                  <div class="param-name">List&lt;SObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.insertRecordsByStrip">
+                    <span>insertRecordsByStrip(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; insertRecordsByStrip(List&lt;SObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">CrudType</div>
+                  <div class="param-description">crudType</div>
+                  <div class="param-name">List&lt;SObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.updateRecord">
+                    <span>updateRecord(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject updateRecord(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.updateRecordBySharing">
+                    <span>updateRecordBySharing(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject updateRecordBySharing(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.updateRecordByStrip">
+                    <span>updateRecordByStrip(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject updateRecordByStrip(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.updateRecords">
+                    <span>updateRecords(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; updateRecords(List&lt;sObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;sObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.updateRecordsBySharing">
+                    <span>updateRecordsBySharing(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; updateRecordsBySharing(List&lt;SObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;SObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.updateRecordsByStrip">
+                    <span>updateRecordsByStrip(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; updateRecordsByStrip(List&lt;sObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;Object&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-11-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecord">
+                    <span>upsertRecord(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject upsertRecord(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecord_1">
+                    <span>upsertRecord(record, externalFieldName)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject upsertRecord( SObject record, SObjectField externalFieldName )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecordBySharing">
+                    <span>upsertRecordBySharing(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject upsertRecordBySharing(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecordBySharing_1">
+                    <span>upsertRecordBySharing(record, externalFieldName)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject upsertRecordBySharing( SObject record, SObjectField externalFieldName )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecordByStrip">
+                    <span>upsertRecordByStrip(record)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject upsertRecordByStrip(SObject record)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecordByStrip_1">
+                    <span>upsertRecordByStrip(record, externalFieldName)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static SObject upsertRecordByStrip( SObject record, SObjectField externalFieldName )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">SObject</div>
+                  <div class="param-description">record</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    SObject
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecords">
+                    <span>upsertRecords(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; upsertRecords(List&lt;sObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;sObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecords_1">
+                    <span>upsertRecords(records, externalFieldName)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; upsertRecords( List&lt;sObject&gt; records, SObjectField externalFieldName )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;sObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecordsBySharing">
+                    <span>upsertRecordsBySharing(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; upsertRecordsBySharing(List&lt;SObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;SObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecordsBySharing_1">
+                    <span>upsertRecordsBySharing(records, externalFieldName)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; upsertRecordsBySharing( List&lt;SObject&gt; records, SObjectField externalFieldName )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;SObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-15-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecordsByStrip">
+                    <span>upsertRecordsByStrip(records)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; upsertRecordsByStrip(List&lt;sObject&gt; records)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;Object&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-11-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DatabaseUtils.upsertRecordsByStrip_1">
+                    <span>upsertRecordsByStrip(records, externalFieldName)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static List&lt;SObject&gt; upsertRecordsByStrip( List&lt;sObject&gt; records, SObjectField externalFieldName )
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">List&lt;sObject&gt;</div>
+                  <div class="param-description">records</div>
+                  <div class="param-name">SObjectField</div>
+                  <div class="param-description">externalFieldName</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    List&lt;SObject&gt;
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align | 05-12-2021
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td class="footer">
+
+          <div>
+            <a href="https://github.com/no-stack-dub-sack/apexdox-vs-code" target="_blank" rel="noopener noreferrer">
+              Powered By ApexDox VS Code
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+
+</html>

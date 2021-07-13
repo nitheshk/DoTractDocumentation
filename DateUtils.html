@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>DoTract Documentation</title>
+    <meta charset="UTF-8">
+    <script type="module" src="./assets/index.js"></script>
+    <script type="module" src="./assets/search-idx.js"></script>
+    <script type="module" src="./assets/search.js"></script>
+    <script charset="UTF-8" src="./assets/highlight.js"></script>
+    <script charset="UTF-8" src="./assets/mark.js"></script>
+    <script charset="UTF-8" src="./assets/lunr.js"></script>
+    <link rel="stylesheet" href="./assets/highlight.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/index.css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <div id="side-bar">
+
+      <div id="logo-container">
+        <div class="title">
+          DoTract Documentation
+        </div>
+        <img src="assets/logo.png" />
+        <div class="subtitle">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.digitalalign.com/">Transforming Financial Services</a>
+        </div>
+      </div>
+      <div id="search-wrapper">
+        <div class="search-icon"></div>
+        <input id="search-input" type="text" autocomplete="off" placeholder="Search...">
+      </div>
+      <ul id="search-results" class=""></ul>
+      <div class="navbar">
+        <nav role="navigation">
+          <a class="nav-header" id="home" href="javascript:void(0)" onclick="goToLocation('index.html');">
+            Home
+          </a>
+          <details id="Constant" class="group-name">
+            <summary id="header-Constant" class="nav-header">
+              <span>Constant</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="QueryConstants" id="item-QueryConstants" class="nav-item class public" onclick="goToLocation('QueryConstants.html');">
+                <a tabindex="1" href="javascript:void(0)">QueryConstants</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Dispatcher" class="group-name">
+            <summary id="header-Dispatcher" class="nav-header">
+              <span>Dispatcher</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="TriggerDispatcher" id="item-TriggerDispatcher" class="nav-item class global" onclick="goToLocation('TriggerDispatcher.html');">
+                <a tabindex="1" href="javascript:void(0)">TriggerDispatcher</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Enum" class="group-name">
+            <summary id="header-Enum" class="nav-header">
+              <span>Enum</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="CrudType" id="item-CrudType" class="nav-item class global" onclick="goToLocation('CrudType.html');">
+                <a tabindex="1" href="javascript:void(0)">CrudType</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Handler" class="group-name">
+            <summary id="header-Handler" class="nav-header">
+              <span>Handler</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="AbstractTriggerHandler" id="item-AbstractTriggerHandler" class="nav-item class global" onclick="goToLocation('AbstractTriggerHandler.html');">
+                <a tabindex="1" href="javascript:void(0)">AbstractTriggerHandler</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Repository" class="group-name">
+            <summary id="header-Repository" class="nav-header">
+              <span>Repository</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="TriggerRepository" id="item-TriggerRepository" class="nav-item class public" onclick="goToLocation('TriggerRepository.html');">
+                <a tabindex="1" href="javascript:void(0)">TriggerRepository</a>
+              </li>
+              <li title="UserRepository" id="item-UserRepository" class="nav-item class global" onclick="goToLocation('UserRepository.html');">
+                <a tabindex="1" href="javascript:void(0)">UserRepository</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Service" class="group-name">
+            <summary id="header-Service" class="nav-header">
+              <span>Service</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="XMLDom" id="item-XMLDom" class="nav-item class public" onclick="goToLocation('XMLDom.html');">
+                <a tabindex="1" href="javascript:void(0)">XMLDom</a>
+              </li>
+            </ul>
+          </details>
+          <details id="Utility" class="group-name">
+            <summary id="header-Utility" class="nav-header">
+              <span>Utility</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="XMLSerializer" id="item-XMLSerializer" class="nav-item class global" onclick="goToLocation('XMLSerializer.html');">
+                <a tabindex="1" href="javascript:void(0)">XMLSerializer</a>
+              </li>
+              <li title="Query" id="item-Query" class="nav-item class global" onclick="goToLocation('Query.html');">
+                <a tabindex="1" href="javascript:void(0)">Query</a>
+              </li>
+              <li title="ApexUtils" id="item-ApexUtils" class="nav-item class public" onclick="goToLocation('ApexUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">ApexUtils</a>
+              </li>
+              <li title="CollectionUtils" id="item-CollectionUtils" class="nav-item class global" onclick="goToLocation('CollectionUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">CollectionUtils</a>
+              </li>
+              <li title="DatabaseUtils" id="item-DatabaseUtils" class="nav-item class global" onclick="goToLocation('DatabaseUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">DatabaseUtils</a>
+              </li>
+              <li title="DateUtils" id="item-DateUtils" class="nav-item class global" onclick="goToLocation('DateUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">DateUtils</a>
+              </li>
+              <li title="GenericUtils" id="item-GenericUtils" class="nav-item class global" onclick="goToLocation('GenericUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">GenericUtils</a>
+              </li>
+              <li title="SecurityUtils" id="item-SecurityUtils" class="nav-item class global" onclick="goToLocation('SecurityUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">SecurityUtils</a>
+              </li>
+              <li title="SObjectUtils" id="item-SObjectUtils" class="nav-item class global" onclick="goToLocation('SObjectUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">SObjectUtils</a>
+              </li>
+              <li title="SObjectWithoutSharing" id="item-SObjectWithoutSharing" class="nav-item class public" onclick="goToLocation('SObjectWithoutSharing.html');">
+                <a tabindex="1" href="javascript:void(0)">SObjectWithoutSharing</a>
+              </li>
+              <li title="SObjectWithSharing" id="item-SObjectWithSharing" class="nav-item class public" onclick="goToLocation('SObjectWithSharing.html');">
+                <a tabindex="1" href="javascript:void(0)">SObjectWithSharing</a>
+              </li>
+              <li title="UserUtils" id="item-UserUtils" class="nav-item class global" onclick="goToLocation('UserUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">UserUtils</a>
+              </li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </div>
+    <table id="content">
+      <tr>
+        <td class="scoping-panel">
+          Show: <input type="checkbox" checked="true" id="cbx-all" onclick="toggleAllScopes(this.checked);" />
+          <label for="cbx-all">All</label>&nbsp;&nbsp;
+          <input type="checkbox" checked="true" id="cbx-global" onclick="toggleScope('global', this.checked);" />
+          <label for="cbx-global">
+            global
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-public" onclick="toggleScope('public', this.checked);" />
+          <label for="cbx-public">
+            public
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-webservice" onclick="toggleScope('webservice', this.checked);" />
+          <label for="cbx-webservice">
+            webService
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td class="doc-page">
+
+          <div class="section">
+
+            <h2 class="class-title top-level-type" id="DateUtils">
+              <span>DateUtils</span>
+            </h2>
+            <div class="class-container">
+
+              <div class="class-description">
+                Copyright (c) 2021 Digital Align Date Related Methods
+              </div>
+              <div class="class-subtitle">
+                Signature
+              </div>
+              <div class="class-annotations">@SuppressWarnings('PMD.AvoidGlobalModifier')</div>
+              <div class="class-signature">
+                global with sharing class DateUtils
+              </div><br />Digital Align Team @reference
+            </div>
+            <div class="subsection methods">
+              <h3 class="subsection-title methods">DateUtils Methods</h3>
+              <div class="methods-container">
+                <ul class="methods-toc">
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DateUtils.calculateMonthsBetween">
+                      calculateMonthsBetween (startDate, endDate)
+                    </a>
+
+                    <div class="methods-toc__description">
+                      Get month between two dates
+                    </div>
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DateUtils.formatDateGMT">
+                      formatDateGMT (dt)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DateUtils.formatDateTimeGMT">
+                      formatDateTimeGMT (dt)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DateUtils.formatDateToDateTime">
+                      formatDateToDateTime (d)
+                    </a>
+
+                  </li>
+                  <li class="method global">
+                    <a class="methods-toc__entry " href="#DateUtils.isLastDayOfMonth">
+                      isLastDayOfMonth (d)
+                    </a>
+
+                    <div class="methods-toc__description">
+                      Find last day of month
+                    </div>
+                  </li>
+                </ul>
+                <div class="method global">
+                  <h4 class="method-title " id="DateUtils.calculateMonthsBetween">
+                    <span>calculateMonthsBetween(startDate, endDate)</span>
+                  </h4>
+                  <div class="method-description">
+                    Get month between two dates
+                  </div>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static Integer calculateMonthsBetween(Date startDate, Date endDate)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">Date</div>
+                  <div class="param-description">startDate</div>
+                  <div class="param-name">Date</div>
+                  <div class="param-description">endDate</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    Integer Months in integer
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DateUtils.formatDateGMT">
+                    <span>formatDateGMT(dt)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static String formatDateGMT(Datetime dt)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">Datetime</div>
+                  <div class="param-description">dt</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    String
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DateUtils.formatDateTimeGMT">
+                    <span>formatDateTimeGMT(dt)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static String formatDateTimeGMT(Datetime dt)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">Datetime</div>
+                  <div class="param-description">dt</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    String
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DateUtils.formatDateToDateTime">
+                    <span>formatDateToDateTime(d)</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static String formatDateToDateTime(Date d)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">Date</div>
+                  <div class="param-description">d</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    String
+                  </div>
+                  <div class="method-subtitle">
+                    Author
+                  </div>
+                  <div class="method-subtitle-description">
+                    Digital Align Team | 07-13-2021
+                  </div>
+                </div>
+                <div class="method global">
+                  <h4 class="method-title " id="DateUtils.isLastDayOfMonth">
+                    <span>isLastDayOfMonth(d)</span>
+                  </h4>
+                  <div class="method-description">
+                    Find last day of month
+                  </div>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+
+                  <div class="method-signature">
+                    global static Boolean isLastDayOfMonth(Date d)
+                  </div>
+                  <div class="method-subtitle">Parameters</div>
+                  <div class="param-name">Date</div>
+                  <div class="param-description">d</div>
+                  <div class="method-subtitle">
+                    Returns
+                  </div>
+                  <div class="method-subtitle-description">
+                    Boolean return true if day is last day of month
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td class="footer">
+
+          <div>
+            <a href="https://github.com/no-stack-dub-sack/apexdox-vs-code" target="_blank" rel="noopener noreferrer">
+              Powered By ApexDox VS Code
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+
+</html>
